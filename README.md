@@ -1,4 +1,4 @@
-# sampling_budgeted_evaluation_0b2f7d31
+# agent_retry_storm_budgeted_eval
 
 （智能体重试风暴场景）重复测量智能体重试风暴时，结果波动有多大？用抽样与样本量分析给出误差区间和样本量要求。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python sampling_budgeted_evaluation_0b2f7d31.py --help
-python sampling_budgeted_evaluation_0b2f7d31.py --input sample.txt
-python sampling_budgeted_evaluation_0b2f7d31.py --input sample.txt --json
+python agent_retry_storm_budgeted_eval.py --help
+python agent_retry_storm_budgeted_eval.py --input sample.txt
+python agent_retry_storm_budgeted_eval.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「预算内评测」使用分隔符 `,` 区分标签与载荷。
@@ -50,7 +50,7 @@ python sampling_budgeted_evaluation_0b2f7d31.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python sampling_budgeted_evaluation_0b2f7d31.py --input sample.txt --json`；
+2. 运行 `python agent_retry_storm_budgeted_eval.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
